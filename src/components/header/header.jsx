@@ -1,7 +1,6 @@
 import React from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
-import Logo from "../../logo/WhatsApp Image 2023-05-01 at 12.14.19.jpeg";
 
 function header() {
 
@@ -24,15 +23,15 @@ function header() {
 
                 <nav className="menu">
 
-                    <Link to="/services" className="rutasNav">
+                    <Link to="/" className="rutasNav">
                         Inicio
                     </Link>
 
-                    <Link to="/contact" className="rutasNav">
+                    <Link to="/contacto" className="rutasNav">
                         Contacto
                     </Link>
 
-                    <Link to="/" className="rutasNav">
+                    <Link to="/perfil" className="rutasNav">
                         Perfil
                     </Link>
 

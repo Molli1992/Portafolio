@@ -1,0 +1,18 @@
+.body-inicio {
+    min-height: 76vh;
+}
+
+.card-inicio {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.stack-inicio {
+    width: 40%;
+    padding: 0px 15px;
+}
+
+.img-inicio {
+    height: 100%;
+    width: 100%;
+}

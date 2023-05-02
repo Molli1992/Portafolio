@@ -1,0 +1,22 @@
+.body-perfil {
+    min-height: 76vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-perfil {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+}
+
+.stack-perfil {
+    width: 40%;
+    padding: 0px 15px;
+}
+
+.img-perfil {
+    height: 100%;
+    width: 100%;
+}

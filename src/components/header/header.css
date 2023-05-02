@@ -31,10 +31,8 @@
     color: white;
 }
 
-.logo img {
-    height: 60px;
-    width: 120px;
-    border-radius: 80px;
+.logo a :hover {
+    color: #40de32;
 }
 
 .menu {
