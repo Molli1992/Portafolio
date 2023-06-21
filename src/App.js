@@ -1,31 +1,19 @@
 import React from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import "./App.css"
 import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
-import Inicio from "./components/inicio/inicio";
-import Perfil from "./components/perfil/perfil";
-import Contacto from "../src/components/contacto/contacto";
+import Intro from "./components/intro/intro";
 
 
 function App() {
 
   return (
 
-    <BrowserRouter>
+    <div className="app">
 
       <Header />
+      <Intro />
 
-      <Routes>
-
-        <Route path="/" element={<Inicio />} />
-        <Route path="/perfil" element={<Perfil />} />
-        <Route path="/contacto" element={<Contacto />} />
-
-      </Routes>
-
-      <Footer />
-
-    </BrowserRouter>
+    </div>
 
   );
 

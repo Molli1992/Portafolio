@@ -7,39 +7,30 @@ function header() {
 
     return (
 
-        <header className="header">
+        <div className="n-wrapper">
 
-            <div className="container">
+            <div className="n-left">
+                <div className="n-name">Felipe</div>
+                <span>toggle</span>
+            </div>
 
-                <div className="logo">
-                    <a href="https://github.com/Molli1992" target="_blank" rel="noreferrer"><ion-icon name="logo-github" size="large"></ion-icon></a>
+            <div className="n-rigth">
+
+                <div className="n-list">
+                    <ul>
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>Experience</li>
+                        <li>Portfolio</li>
+                        <li>Testimonials</li>
+                    </ul>
                 </div>
 
-                <div className="boton">
-                    <label for="btn-menu">Menu</label>
-                </div>
-
-                <input type="checkbox" id="btn-menu"></input>
-
-                <nav className="menu">
-
-                    <Link to="/" className="rutasNav">
-                        Inicio
-                    </Link>
-
-                    <Link to="/contacto" className="rutasNav">
-                        Contacto
-                    </Link>
-
-                    <Link to="/perfil" className="rutasNav">
-                        Perfil
-                    </Link>
-
-                </nav>
+                <button className="button">Contact Us</button>
 
             </div>
 
-        </header>
+        </div>
 
     );
 
