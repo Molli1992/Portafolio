@@ -43,7 +43,7 @@ function Intro() {
             <div className="i-right">
 
                 <img src={Vectorial} alt="Vectorial" className="vectorial" />
-                <img src={Photo} alt="Profile-Photo" className="i-photo-profile" />
+                <img src={Photo} alt="Profile" className="i-photo-profile" />
 
             </div>
 
