@@ -25,7 +25,7 @@ function header() {
                     </ul>
                 </div>
 
-                <button className="button">Contact Us</button>
+                <button className="button">Contact</button>
 
             </div>
 

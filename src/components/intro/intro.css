@@ -73,3 +73,15 @@
     position: absolute;
     height: 500px;
 }
+
+@media(max-width: 650px) {
+
+    .intro {
+        display: block;
+    }
+
+    .i-right {
+        display: none;
+    }
+
+}
