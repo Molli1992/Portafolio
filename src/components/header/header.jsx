@@ -9,8 +9,7 @@ function header() {
         <div className="n-wrapper">
 
             <div className="n-left">
-                <div className="n-name">Felipe</div>
-                <span>toggle</span>
+                <div className="n-name">Felipe Blaksley</div>
             </div>
 
             <div className="n-rigth">
@@ -20,8 +19,7 @@ function header() {
                         <li>Home</li>
                         <li>Services</li>
                         <li>Experience</li>
-                        <li>Portfolio</li>
-                        <li>Testimonials</li>
+                        <li>Profile</li>
                     </ul>
                 </div>
 
