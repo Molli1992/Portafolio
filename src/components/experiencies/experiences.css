@@ -1,0 +1,60 @@
+.experiences {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 30vh;
+    margin-bottom: 8rem;
+}
+
+.achivement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.achivement span:nth-of-type(1) {
+    color: #242D49;
+    font-size: 1.1rem;
+    font-weight: 540;
+}
+
+.achivement span:nth-of-type(2) {
+    color: #FCA61F;
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+@media(max-width: 750px) {
+    .experiences {
+        display: block;
+        min-height: 90vh;
+        padding-top: 100px;
+    }
+
+    .achivement {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 550px) {
+    .experiences {
+        display: block;
+        min-height: 70vh;
+        padding-top: 0px;
+    }
+}

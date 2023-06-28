@@ -36,6 +36,9 @@ function Intro() {
                     <a href="https://www.instagram.com/felipeblaksley/" target="_blank" rel="noreferrer">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </a>
+                    <a href="https://api.whatsapp.com/send?phone=1124586710" target="_blank" rel="noreferrer">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
                 </div>
 
             </div>
