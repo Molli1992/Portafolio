@@ -22,13 +22,12 @@ function Works() {
                 <span>Brands & Clients</span>
 
                 <span>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Logical thinking and problem solving are two key skills that are
                     <br></br>
-                    Dolorem modi ut sit quisquam iure nihil, corrupti animi eos optio
+                    developed by learning to code. The process of writing code requires
                     <br></br>
-                    Dolorem modi ut sit quisquam iure nihil, corrupti animi eos optio
+                    thinking in logical terms and how to make a solution work efficiently.
                     <br></br>
-                    Dolorem modi ut sit quisquam iure nihil, corrupti animi eos optio
                 </span>
 
                 <button className="button s-button">Hire me</button>

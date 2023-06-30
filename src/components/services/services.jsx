@@ -18,9 +18,11 @@ function Services() {
                 <span>Services</span>
 
                 <span>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    It's all about making sure a product's user interface is as intuitive as possible,
                     <br></br>
-                    Dolorem modi ut sit quisquam iure nihil, corrupti animi eos optio
+                    and that means carefully considering each and every visual and
+                    <br></br>
+                    interactive element the user might encounter.
                 </span>
 
                 <a href={Resume} download>
@@ -51,7 +53,7 @@ function Services() {
                     <Card
                         emoji={<ion-icon name="bulb-outline" size="large"></ion-icon>}
                         heading={"UI/UX"}
-                        detail={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quam soluta perferendis"}
+                        detail={"The user experience covers all aspects of the end user's interaction with the company, its services and products."}
                     />
                 </div>
 
