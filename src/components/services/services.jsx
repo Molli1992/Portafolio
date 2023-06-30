@@ -10,7 +10,7 @@ function Services() {
 
     return (
 
-        <div className="services">
+        <div className="services" id="Services">
 
             <div className="awesome">
 

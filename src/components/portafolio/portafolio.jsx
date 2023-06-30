@@ -29,7 +29,7 @@ function Portafolio() {
 
     return (
 
-        <div className="portafolio">
+        <div className="portafolio" id="Portfolio">
 
             <div className="tittle-container">
                 <span className="tittle-1">Recent Projects</span>

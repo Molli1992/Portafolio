@@ -42,3 +42,9 @@
     cursor: pointer;
     color: #FCA61F;
 }
+
+@media(max-width: 850px) {
+    .n-rigth {
+        display: none;
+    }
+}

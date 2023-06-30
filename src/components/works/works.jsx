@@ -14,7 +14,7 @@ function Works() {
 
     return (
 
-        <div className="works">
+        <div className="works" id="Works">
 
             <div className="awesome">
 

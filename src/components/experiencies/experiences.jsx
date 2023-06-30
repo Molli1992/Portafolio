@@ -9,7 +9,7 @@ function Experiences() {
 
     return (
 
-        <div className="experiences">
+        <div className="experiences" id="Experiences">
 
             <div className="achivement">
                 <div className="circle">2+</div>

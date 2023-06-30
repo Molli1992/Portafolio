@@ -7,7 +7,7 @@ function Contact() {
 
     return (
 
-        <div className='body-contact'>
+        <div className='body-contact' id='Contact'>
 
             <section className="contact">
 
