@@ -1,7 +1,7 @@
 import React from "react";
 import "./intro.css";
 import Vectorial from "../../logo/vector-removebg-preview.png";
-import Photo from "../../logo/joven-apuesto-feliz-pulgares-arriba-firmar-casual-pleno-crecimiento-aislado-blanco-removebg-preview.png";
+import Photo from "../../imagenes/caricatura-removebg-preview.png";
 
 
 function Intro() {
