@@ -6,6 +6,7 @@ import Henry from "../../imagenes/henrystore-captura.png";
 import Penger from "../../imagenes/pengersolutions-captura.png";
 import Hussel from "../../imagenes/husselkay-captura.png";
 import Mey from "../../imagenes/meyblaks-captura.png";
+import Chess from "../../imagenes/Captura de pantalla chess app.png";
 
 
 
@@ -25,6 +26,10 @@ function Portafolio() {
 
     const onClickMey = () => {
         window.open("https://nimble-rugelach-e7258d.netlify.app/", "_blank");
+    }
+
+    const onClickChess = () => {
+        window.open("https://spontaneous-sable-9e1886.netlify.app/", "_blank");
     }
 
     return (
@@ -60,6 +65,11 @@ function Portafolio() {
                 <SwiperSlide>
                     <img src={Penger} alt="Web-Site" />
                     <button className="button-slider" onClick={onClickPenger}>View More</button>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <img src={Chess} alt="Web-Site" />
+                    <button className="button-slider" onClick={onClickChess}>View More</button>
                 </SwiperSlide>
 
             </Swiper>
