@@ -152,6 +152,12 @@
     background-color: #f7f7f7;
 }
 
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 991px) {
     .contact {
         padding: 50px;

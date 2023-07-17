@@ -7,6 +7,7 @@ import Penger from "../../imagenes/pengersolutions-captura.png";
 import Hussel from "../../imagenes/husselkay-captura.png";
 import Mey from "../../imagenes/meyblaks-captura.png";
 import Chess from "../../imagenes/Captura de pantalla chess app.png";
+import Draw from "../../imagenes/draw-app.png"
 
 
 
@@ -30,6 +31,10 @@ function Portafolio() {
 
     const onClickChess = () => {
         window.open("https://spontaneous-sable-9e1886.netlify.app/", "_blank");
+    }
+
+    const onClickDraw = () => {
+        window.open("https://mellow-clafoutis-7975b0.netlify.app", "_blank");
     }
 
     return (
@@ -70,6 +75,11 @@ function Portafolio() {
                 <SwiperSlide>
                     <img src={Chess} alt="Web-Site" />
                     <button className="button-slider" onClick={onClickChess}>View More</button>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <img src={Draw} alt="Web-Site" />
+                    <button className="button-slider" onClick={onClickDraw}>View More</button>
                 </SwiperSlide>
 
             </Swiper>
