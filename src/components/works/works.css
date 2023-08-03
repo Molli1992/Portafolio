@@ -161,24 +161,3 @@
     }
 
 }
-
-@media(max-width: 488px) {
-    .works {
-        min-height: 250vh;
-    }
-
-}
-
-@media(max-width: 413px) {
-    .works {
-        min-height: 270vh;
-    }
-
-}
-
-@media(max-width: 365px) {
-    .works {
-        min-height: 310vh;
-    }
-
-}
