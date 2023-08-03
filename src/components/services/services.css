@@ -139,6 +139,7 @@
 
     .services {
         display: block;
+        min-height: 120vh;
     }
 
     .position-card-1 {
@@ -161,6 +162,7 @@
 
     .services {
         display: block;
+        min-height: 180vh;
     }
 
     .position-card-1 {
@@ -183,6 +185,7 @@
 
     .services {
         display: block;
+        min-height: 180vh;
     }
 
     .position-card-1 {
@@ -205,6 +208,7 @@
 
     .services {
         display: block;
+        min-height: 220vh;
     }
 
     .position-card-1 {

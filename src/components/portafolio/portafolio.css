@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 .tittle-container {
