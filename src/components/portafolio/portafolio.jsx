@@ -58,11 +58,6 @@ function Portafolio() {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <img src={Hussel} alt="Web-Site" />
-                    <button className="button-slider" onClick={onClickHussel}>View More</button>
-                </SwiperSlide>
-
-                <SwiperSlide>
                     <img src={Mey} alt="Web-Site" />
                     <button className="button-slider" onClick={onClickMey}>View More</button>
                 </SwiperSlide>
@@ -80,6 +75,11 @@ function Portafolio() {
                 <SwiperSlide>
                     <img src={Draw} alt="Web-Site" />
                     <button className="button-slider" onClick={onClickDraw}>View More</button>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <img src={Hussel} alt="Web-Site" />
+                    <button className="button-slider" onClick={onClickHussel}>View More</button>
                 </SwiperSlide>
 
             </Swiper>
