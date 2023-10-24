@@ -7,9 +7,16 @@ import Penger from "../../imagenes/pengersolutions-captura.png";
 import Hussel from "../../imagenes/husselkay-captura.png";
 import Mey from "../../imagenes/meyblaks-captura.png";
 import Chess from "../../imagenes/Captura de pantalla chess app.png";
+<<<<<<< HEAD
 import Draw from "../../imagenes/draw-app.png";
 import VectorSoluciones from "../../imagenes/img-vector-soluciones.png";
 import GenesisdeHerencia from "../../imagenes/img-genesis-de-herencia.png";
+=======
+import Draw from "../../imagenes/draw-app.png"
+import Movie from "../../imagenes/Captura de pantalla movie app.png";
+
+
+>>>>>>> 5b7222e4f9706c8a1d3716c2ac0fe293b6e904ab
 
 function Portafolio() {
   const onClickHenry = () => {
@@ -40,9 +47,17 @@ function Portafolio() {
     window.open("http://vectorsoluciones.com.ar/", "_blank");
   };
 
+<<<<<<< HEAD
   const onClickRuiz = () => {
     window.open("https://genesisdeherencia.com/", "_blank");
   };
+=======
+    const onClickMovie = () => {
+        window.open("https://calm-bombolone-99a44c.netlify.app/", "_blank");
+    }
+
+    return (
+>>>>>>> 5b7222e4f9706c8a1d3716c2ac0fe293b6e904ab
 
   return (
     <div className="portafolio" id="Portfolio">
@@ -73,6 +88,7 @@ function Portafolio() {
           </button>
         </SwiperSlide>
 
+<<<<<<< HEAD
         <SwiperSlide>
           <img src={Mey} alt="Web-Site" />
           <button className="button-slider" onClick={onClickMey}>
@@ -86,6 +102,12 @@ function Portafolio() {
             View More
           </button>
         </SwiperSlide>
+=======
+                <SwiperSlide>
+                    <img src={Mey} alt="Web-Site" />
+                    <button className="button-slider" onClick={onClickMey}>View More</button>
+                </SwiperSlide>
+>>>>>>> 5b7222e4f9706c8a1d3716c2ac0fe293b6e904ab
 
         <SwiperSlide>
           <img src={Chess} alt="Web-Site" />
@@ -94,12 +116,24 @@ function Portafolio() {
           </button>
         </SwiperSlide>
 
+<<<<<<< HEAD
         <SwiperSlide>
           <img src={Hussel} alt="Web-Site" />
           <button className="button-slider" onClick={onClickHussel}>
             View More
           </button>
         </SwiperSlide>
+=======
+                <SwiperSlide>
+                    <img src={Movie} alt="Web-Site" />
+                    <button className="button-slider" onClick={onClickMovie}>View More</button>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <img src={Chess} alt="Web-Site" />
+                    <button className="button-slider" onClick={onClickChess}>View More</button>
+                </SwiperSlide>
+>>>>>>> 5b7222e4f9706c8a1d3716c2ac0fe293b6e904ab
 
         <SwiperSlide>
           <img src={Draw} alt="Web-Site" />
@@ -112,4 +146,21 @@ function Portafolio() {
   );
 }
 
+<<<<<<< HEAD
 export default Portafolio;
+=======
+                <SwiperSlide>
+                    <img src={Hussel} alt="Web-Site" />
+                    <button className="button-slider" onClick={onClickHussel}>View More</button>
+                </SwiperSlide>
+
+            </Swiper>
+
+        </div>
+
+    );
+
+};
+
+export default Portafolio;
+>>>>>>> 5b7222e4f9706c8a1d3716c2ac0fe293b6e904ab
