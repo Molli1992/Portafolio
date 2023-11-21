@@ -18,11 +18,11 @@ function Portafolio() {
   };
 
   const onClickPenger = () => {
-    window.open("https://pengersolutions.com/", "_blank");
+    window.open("https://cheerful-panda-b28d45.netlify.app/", "_blank");
   };
 
   const onClickHussel = () => {
-    window.open("https://husselkay.com/", "_blank");
+    window.open("https://effervescent-vacherin-201132.netlify.app/", "_blank");
   };
 
   const onClickMey = () => {
