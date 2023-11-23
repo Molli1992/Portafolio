@@ -11,6 +11,7 @@ import Draw from "../../imagenes/draw-app.png";
 import VectorSoluciones from "../../imagenes/img-vector-soluciones.png";
 import GenesisdeHerencia from "../../imagenes/img-genesis-de-herencia.png";
 import Movie from "../../imagenes/Captura de pantalla movie app.png";
+import Nigiri from "../../imagenes/nigiri-captura.png";
 
 function Portafolio() {
   const onClickHenry = () => {
@@ -48,6 +49,11 @@ function Portafolio() {
     window.open("https://calm-bombolone-99a44c.netlify.app/", "_blank");
   };
 
+  const onClickNigiri = () => {
+    window.open("https://gentle-cuchufli-79d031.netlify.app/", "_blank");
+  };
+
+
   return (
     <div className="portafolio" id="Portfolio">
       <div className="tittle-container">
@@ -73,6 +79,13 @@ function Portafolio() {
         <SwiperSlide>
           <img src={GenesisdeHerencia} alt="Web-Site" />
           <button className="button-slider" onClick={onClickRuiz}>
+            View More
+          </button>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={Nigiri} alt="Web-Site" />
+          <button className="button-slider" onClick={onClickNigiri}>
             View More
           </button>
         </SwiperSlide>
