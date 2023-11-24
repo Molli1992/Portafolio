@@ -50,7 +50,7 @@ function Portafolio() {
   };
 
   const onClickNigiri = () => {
-    window.open("https://gentle-cuchufli-79d031.netlify.app/", "_blank");
+    window.open("https://realtynigiri.netlify.app/", "_blank");
   };
 
 
