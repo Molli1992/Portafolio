@@ -30,27 +30,28 @@ function Portafolio() {
     window.open("https://meyblaks.netlify.app/", "_blank");
   };
 
-  const onClickChess = () => {
-    window.open("https://spontaneous-sable-9e1886.netlify.app/", "_blank");
-  };
-
-  const onClickDraw = () => {
-    window.open("https://mellow-clafoutis-7975b0.netlify.app", "_blank");
-  };
-
   const onClickVector = () => {
-    window.open("http://vectorsoluciones.com.ar/", "_blank");
+    window.open("https://vectorsoluciones.netlify.app/", "_blank");
   };
+
+  const onClickNigiri = () => {
+    window.open("https://realtynigiri.netlify.app/", "_blank");
+  };
+
   const onClickRuiz = () => {
-    window.open("https://genesisdeherencia.com/", "_blank");
+    window.open("https://genesisdeherencia.netlify.app/", "_blank");
   };
 
   const onClickMovie = () => {
     window.open("https://calm-bombolone-99a44c.netlify.app/", "_blank");
   };
 
-  const onClickNigiri = () => {
-    window.open("https://realtynigiri.netlify.app/", "_blank");
+  const onClickChess = () => {
+    window.open("https://spontaneous-sable-9e1886.netlify.app/", "_blank");
+  };
+
+  const onClickDraw = () => {
+    window.open("https://mellow-clafoutis-7975b0.netlify.app", "_blank");
   };
 
   return (
