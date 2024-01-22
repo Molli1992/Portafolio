@@ -15,7 +15,7 @@ import Nigiri from "../../imagenes/nigiri-captura.png";
 
 function Portafolio() {
   const onClickBikeBazaar = () => {
-    window.open("https://henrygamestores.vercel.app/", "_blank");
+    window.open("https://bikebazaar.netlify.app/", "_blank");
   };
 
   const onClickPenger = () => {
