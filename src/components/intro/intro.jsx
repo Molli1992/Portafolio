@@ -11,8 +11,9 @@ function Intro() {
           <span>Hy! I Am</span>
           <span>Felipe Blaksley</span>
           <span>
-            Frontend Developer with high level of experiences in web desinging
-            and development, producting the Quality work
+            Hello, I am a fullstack web developer with 2 years of experience
+            passionate about the logical and creative thinking involved in
+            developing a website.
           </span>
         </div>
 
