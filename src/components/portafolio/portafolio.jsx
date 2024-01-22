@@ -2,9 +2,9 @@ import React from "react";
 import "./portafolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Henry from "../../imagenes/henrystore-captura.png";
+import BikeBazzar from "../../imagenes/Captura de pantalla bike-bazaar.png";
 import Penger from "../../imagenes/pengersolutions-captura.png";
-import Hussel from "../../imagenes/husselkay-captura.png";
+import Vollx from "../../imagenes/Captura de pantalla vollx.png";
 import Mey from "../../imagenes/meyblaks-captura.png";
 import Chess from "../../imagenes/Captura de pantalla chess app.png";
 import Draw from "../../imagenes/draw-app.png";
@@ -14,20 +14,20 @@ import Movie from "../../imagenes/Captura de pantalla movie app.png";
 import Nigiri from "../../imagenes/nigiri-captura.png";
 
 function Portafolio() {
-  const onClickHenry = () => {
+  const onClickBikeBazaar = () => {
     window.open("https://henrygamestores.vercel.app/", "_blank");
   };
 
   const onClickPenger = () => {
-    window.open("https://cheerful-panda-b28d45.netlify.app/", "_blank");
+    window.open("https://pengersolutions.netlify.app/", "_blank");
   };
 
-  const onClickHussel = () => {
-    window.open("https://effervescent-vacherin-201132.netlify.app/", "_blank");
+  const onClickVollx = () => {
+    window.open("https://vollx.netlify.app/", "_blank");
   };
 
   const onClickMey = () => {
-    window.open("https://nimble-rugelach-e7258d.netlify.app/", "_blank");
+    window.open("https://meyblaks.netlify.app/", "_blank");
   };
 
   const onClickChess = () => {
@@ -53,7 +53,6 @@ function Portafolio() {
     window.open("https://realtynigiri.netlify.app/", "_blank");
   };
 
-
   return (
     <div className="portafolio" id="Portfolio">
       <div className="tittle-container">
@@ -63,15 +62,8 @@ function Portafolio() {
 
       <Swiper slidesPerView={1} grabCursor={true} className="portafolio-slider">
         <SwiperSlide>
-          <img src={Henry} alt="Web-Site" />
-          <button className="button-slider" onClick={onClickHenry}>
-            View More
-          </button>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img src={VectorSoluciones} alt="Web-Site" />
-          <button className="button-slider" onClick={onClickVector}>
+          <img src={Mey} alt="Web-Site" />
+          <button className="button-slider" onClick={onClickMey}>
             View More
           </button>
         </SwiperSlide>
@@ -84,15 +76,22 @@ function Portafolio() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src={Nigiri} alt="Web-Site" />
-          <button className="button-slider" onClick={onClickNigiri}>
+          <img src={BikeBazzar} alt="Web-Site" />
+          <button className="button-slider" onClick={onClickBikeBazaar}>
             View More
           </button>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src={Mey} alt="Web-Site" />
-          <button className="button-slider" onClick={onClickMey}>
+          <img src={VectorSoluciones} alt="Web-Site" />
+          <button className="button-slider" onClick={onClickVector}>
+            View More
+          </button>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={Nigiri} alt="Web-Site" />
+          <button className="button-slider" onClick={onClickNigiri}>
             View More
           </button>
         </SwiperSlide>
@@ -105,15 +104,15 @@ function Portafolio() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src={Chess} alt="Web-Site" />
-          <button className="button-slider" onClick={onClickChess}>
+          <img src={Vollx} alt="Web-Site" />
+          <button className="button-slider" onClick={onClickVollx}>
             View More
           </button>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src={Hussel} alt="Web-Site" />
-          <button className="button-slider" onClick={onClickHussel}>
+          <img src={Chess} alt="Web-Site" />
+          <button className="button-slider" onClick={onClickChess}>
             View More
           </button>
         </SwiperSlide>
