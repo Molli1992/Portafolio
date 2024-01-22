@@ -33,7 +33,7 @@ function Services() {
 
             <div className="cards">
 
-                <div className="position-card-1">
+                <div>
                     <Card
                         emoji={<ion-icon name="heart-half-outline" size="large"></ion-icon>}
                         heading={"Desing"}
@@ -41,15 +41,15 @@ function Services() {
                     />
                 </div>
 
-                <div className="position-card-2">
+                <div>
                     <Card
                         emoji={<ion-icon name="glasses-outline" size="large"></ion-icon>}
                         heading={"Developer"}
-                        detail={"HTML, Css, Javascript, React, Redux, Node js, Expresse, Sequielize, Postgress SQL"}
+                        detail={"HTML, CSS, Javascript, Next js, React, Redux, Node js, Expresse, Bcript, Nodemailer, Google maps API, Sequielize, Postgress SQL"}
                     />
                 </div>
 
-                <div className="position-card-3">
+                <div>
                     <Card
                         emoji={<ion-icon name="bulb-outline" size="large"></ion-icon>}
                         heading={"UI/UX"}

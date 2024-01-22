@@ -13,7 +13,6 @@ function Card({ emoji, heading, detail }) {
             <div className="icon-card">{emoji}</div>
             <span>{heading}</span>
             <span>{detail}</span>
-            <button className="c-button">LEARN MORE</button>
 
         </div>
 

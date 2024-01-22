@@ -84,4 +84,11 @@
         display: none;
     }
 
+    .i-icons a ion-icon {
+        height: 40px;
+        width: 40px;
+        color: #FCA61F;
+        margin-right: 30px;
+    }
+
 }
