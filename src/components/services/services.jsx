@@ -1,7 +1,7 @@
 import React from "react";
 import "./services.css";
 import Card from "../card/card";
-import Resume from "../../cv/CV-portafolio.pdf";
+import Resume from "../../cv/CV-portfolio.pdf";
 
 
 
