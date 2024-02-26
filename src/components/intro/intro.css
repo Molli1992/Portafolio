@@ -1,7 +1,7 @@
 .intro {
     display: flex;
-    height: 77vh;
     margin-top: 6rem;
+    margin-bottom: 75px;
 }
 
 .i-left {
@@ -87,8 +87,7 @@
     .i-icons a ion-icon {
         height: 40px;
         width: 40px;
-        color: #FCA61F;
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
 }
