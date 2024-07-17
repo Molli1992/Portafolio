@@ -29,7 +29,7 @@ function Works() {
         <div className="w-responsive">
           <div className="w-secCircle-r">
             <a
-              href="https://henrygamestores.vercel.app/"
+              href="https://bikebazaar.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -81,7 +81,7 @@ function Works() {
         <div className="w-mainCircle">
           <div className="w-secCircle">
             <a
-              href="https://henrygamestores.vercel.app/"
+              href="https://bikebazaar.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
