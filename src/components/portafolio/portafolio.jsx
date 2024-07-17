@@ -67,77 +67,77 @@ function Portafolio() {
       </div>
 
       <Swiper slidesPerView={1} grabCursor={true} className="portafolio-slider">
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickMey}>
           <img src={Mey} alt="Web-Site" />
           <button className="button-slider" onClick={onClickMey}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickRuiz}>
           <img src={GenesisdeHerencia} alt="Web-Site" />
           <button className="button-slider" onClick={onClickRuiz}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickBikeBazaar}>
           <img src={BikeBazzar} alt="Web-Site" />
           <button className="button-slider" onClick={onClickBikeBazaar}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickVector}>
           <img src={VectorSoluciones} alt="Web-Site" />
           <button className="button-slider" onClick={onClickVector}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickNigiri}>
           <img src={Nigiri} alt="Web-Site" />
           <button className="button-slider" onClick={onClickNigiri}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickPenger}>
           <img src={Penger} alt="Web-Site" />
           <button className="button-slider" onClick={onClickPenger}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickVollx}>
           <img src={Vollx} alt="Web-Site" />
           <button className="button-slider" onClick={onClickVollx}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickChess}>
           <img src={Chess} alt="Web-Site" />
           <button className="button-slider" onClick={onClickChess}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickMovie}>
           <img src={Movie} alt="Web-Site" />
           <button className="button-slider" onClick={onClickMovie}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickDraw}>
           <img src={Draw} alt="Web-Site" />
           <button className="button-slider" onClick={onClickDraw}>
             View More
           </button>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide onClick={onClickHussel}>
           <img src={Hussel} alt="Web-Site" />
           <button className="button-slider" onClick={onClickHussel}>
             View More
