@@ -12,6 +12,7 @@ import VectorSoluciones from "../../imagenes/img-vector-soluciones.png";
 import GenesisdeHerencia from "../../imagenes/img-genesis-de-herencia.png";
 import Movie from "../../imagenes/Captura de pantalla movie app.png";
 import Nigiri from "../../imagenes/nigiri-captura.png";
+import Hussel from "../../imagenes/husselkay-captura.png";
 
 function Portafolio() {
   const onClickBikeBazaar = () => {
@@ -52,6 +53,10 @@ function Portafolio() {
 
   const onClickDraw = () => {
     window.open("https://mellow-clafoutis-7975b0.netlify.app", "_blank");
+  };
+
+  const onClickHussel = () => {
+    window.open("https://husselkay.netlify.app", "_blank");
   };
 
   return (
@@ -128,6 +133,13 @@ function Portafolio() {
         <SwiperSlide>
           <img src={Draw} alt="Web-Site" />
           <button className="button-slider" onClick={onClickDraw}>
+            View More
+          </button>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src={Hussel} alt="Web-Site" />
+          <button className="button-slider" onClick={onClickHussel}>
             View More
           </button>
         </SwiperSlide>
