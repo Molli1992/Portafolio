@@ -2,6 +2,9 @@
   padding: 0rem 3rem 0 3rem;
   display: flex;
   margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 250px;
 }
 
 .w-rigth {
@@ -106,6 +109,7 @@
   .works {
     display: block;
     padding: 0rem 0.5rem 0 0.5rem;
+    margin-right: 0px;
   }
 
   .w-rigth {
