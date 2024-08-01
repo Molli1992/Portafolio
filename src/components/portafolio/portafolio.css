@@ -64,3 +64,22 @@
   color: #fca61f;
   border: 1px solid #fca61f;
 }
+
+@media(max-width: 850px) {
+  .portafolio img {
+    height: 50vh;
+  }
+}
+
+
+@media(max-width: 550px) {
+  .portafolio img {
+    height: 35vh;
+  }
+}
+
+@media(max-width: 450px) {
+  .portafolio img {
+    height: 30vh;
+  }
+}
