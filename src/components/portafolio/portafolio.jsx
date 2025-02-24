@@ -17,6 +17,7 @@ import GenesisdeHerencia from "../../imagenes/img-genesis-de-herencia.png";
 import Movie from "../../imagenes/Captura de pantalla movie app.png";
 import Nigiri from "../../imagenes/nigiri-captura.png";
 import Hussel from "../../imagenes/husselkay-captura.png";
+import Profile from "../../imagenes/profile-website-img.png";
 
 function Portafolio() {
   const dataWebsites = [
@@ -27,8 +28,9 @@ function Portafolio() {
     { img: Nigiri, url: "https://realtynigiri.netlify.app/" },
     { img: Penger, url: "https://pengersolutions.netlify.app/" },
     { img: Vollx, url: "https://vollx.netlify.app/" },
-    { img: Chess, url: "https://spontaneous-sable-9e1886.netlify.app/" },
     { img: Movie, url: "https://calm-bombolone-99a44c.netlify.app/" },
+    { img: Chess, url: "https://spontaneous-sable-9e1886.netlify.app/" },
+    { img: Profile, url: "https://benevolent-pony.netlify.app/" },
     { img: Draw, url: "https://mellow-clafoutis-7975b0.netlify.app" },
     { img: Hussel, url: "https://husselkay.netlify.app" },
   ];
