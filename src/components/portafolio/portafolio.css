@@ -46,40 +46,24 @@
   height: 75vh;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border-radius: 19px;
+  padding-bottom: 50px;
 }
 
-.button-slider {
-  border-radius: 34px;
-  border: none;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
-}
-
-.button-slider:hover {
-  cursor: pointer;
-  background: white;
-  color: #fca61f;
-  border: 1px solid #fca61f;
-}
-
-@media(max-width: 850px) {
+@media (max-width: 850px) {
   .portafolio img {
     height: 50vh;
   }
 }
 
-
-@media(max-width: 550px) {
+@media (max-width: 550px) {
   .portafolio img {
     height: 35vh;
   }
 }
 
-@media(max-width: 450px) {
+@media (max-width: 450px) {
   .portafolio img {
     height: 30vh;
+    padding-bottom: 75px;
   }
 }

@@ -70,8 +70,6 @@ function Contact() {
       );
   };
 
-  console.log(mensaje);
-
   return (
     <div className="body-contact" id="Contact">
       <section className="contact">
