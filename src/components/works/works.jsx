@@ -1,8 +1,8 @@
 import React from "react";
 import "./works.css";
 import logoHenry from "../../imagenes/henry-logo-removebg-preview.png";
-import logoPenger from "../../imagenes/Logo-penger-solutions.png";
-import logoHussel from "../../imagenes/Logos-Hussel-Kay.png";
+import logoJodify from "../../imagenes/jodify-logo.png";
+import logoBoatmate from "../../imagenes/logo-boatmate.png";
 import logoMey from "../../imagenes/logo meyblaks-01.png";
 import logoGithub from "../../imagenes/logo-github-removebg-preview.png";
 
@@ -38,12 +38,8 @@ function Works() {
           </div>
 
           <div className="w-secCircle-r">
-            <a
-              href="https://husselkay.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={logoHussel} alt="Hussel Kay" />
+            <a href="https://boatmate.com/" target="_blank" rel="noreferrer">
+              <img src={logoBoatmate} alt="Hussel Kay" />
             </a>
           </div>
 
@@ -69,11 +65,11 @@ function Works() {
 
           <div className="w-secCircle-r">
             <a
-              href="https://pengersolutions.netlify.app/"
+              href="https://www.jodify.com.ar/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={logoPenger} alt="Github" />
+              <img src={logoJodify} alt="Github" />
             </a>
           </div>
         </div>
@@ -90,12 +86,8 @@ function Works() {
           </div>
 
           <div className="w-secCircle">
-            <a
-              href="https://husselkay.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={logoHussel} alt="Hussel Kay" />
+            <a href="https://boatmate.com/" target="_blank" rel="noreferrer">
+              <img src={logoBoatmate} alt="Hussel Kay" />
             </a>
           </div>
 
@@ -121,11 +113,11 @@ function Works() {
 
           <div className="w-secCircle">
             <a
-              href="https://pengersolutions.netlify.app/"
+              href="https://www.jodify.com.ar/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={logoPenger} alt="Github" />
+              <img src={logoJodify} alt="Github" />
             </a>
           </div>
         </div>
