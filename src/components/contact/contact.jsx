@@ -1,177 +1,169 @@
-import React, { useRef, useState } from "react";
-import "./contact.css";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
+import styles from "./formContact.module.css";
 import Swal from "sweetalert2";
-import { LoadingOutlined } from "@ant-design/icons";
-import { IoLocation } from "react-icons/io5";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { IoMdMail } from "react-icons/io";
+import { ClipLoader } from "react-spinners";
 
-function Contact() {
-  const form = useRef();
-  const [state, setState] = useState(false);
-  const [mensaje, setMensaje] = useState({
-    from_name: "",
-    from_email: "",
-    message: "",
+export default function Contact() {
+  const [loader, setLoader] = useState(false);
+  const [formData, setFormData] = useState({
+    clientName: "",
+    clientLastName: "",
+    clientEmail: "",
+    clientPhone: "",
+    clientMessage: "",
   });
 
-  const onChange = (e) => {
-    setMensaje({
-      ...mensaje,
+  const onChangeFormData = (e) => {
+    setFormData({
+      ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setState(true);
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
 
-    emailjs
-      .sendForm(
-        "service_8adbckm",
-        "template_9tl62fs",
-        e.target,
-        "PvHbawws_-6fNNwSb"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          Swal.fire({
-            title: "successce",
-            text: "Email sent successfully",
-            icon: "success",
-            confirmButtonText: "Ok",
-          }).then(() => {
-            setMensaje({
-              from_name: "",
-              from_email: "",
-              message: "",
-            });
-            setState(false);
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          Swal.fire({
-            title: "Error!",
-            text: "Error in sending the Email, please try later or write me through social networks",
-            icon: "error",
-            confirmButtonText: "Ok",
-            customClass: {
-              confirmButton: "swalButton",
+  const onSubmit = async () => {
+    if (
+      !formData.clientName ||
+      !formData.clientLastName ||
+      !formData.clientEmail ||
+      !formData.clientPhone ||
+      !formData.clientMessage
+    ) {
+      Swal.fire({
+        title: "Info!",
+        text: "Complete all fields",
+        icon: "info",
+        confirmButtonText: "OK",
+      });
+    } else if (!validateEmail(formData.clientEmail)) {
+      Swal.fire({
+        title: "Info!",
+        text: "Incorrect email format",
+        icon: "info",
+        confirmButtonText: "OK",
+      });
+    } else {
+      setLoader(true);
+      try {
+        const dataClientEmail = {
+          clientName: encodeURIComponent(formData.clientName),
+          clientLastName: encodeURIComponent(formData.clientLastName),
+          clientEmail: encodeURIComponent(formData.clientEmail),
+          clientPhone: encodeURIComponent(formData.clientPhone),
+          clientMessage: encodeURIComponent(formData.clientMessage),
+        };
+        console.log(
+          `${process.env.REACT_APP_API_URL}/api/emails/contactEmail`
+        );
+        const response = await fetch(
+          `${process.env.REACT_APP_API_URL}/api/emails/contactEmail`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
             },
-          }).then(() => {
-            setMensaje({
-              from_name: "",
-              from_email: "",
-              message: "",
-            });
-            setState(false);
-          });
+            body: JSON.stringify(dataClientEmail),
+          }
+        );
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.message || "Error sending message");
         }
-      );
+
+        Swal.fire({
+          title: "Success!",
+          text: "Message sent successfully",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+      } catch (error) {
+        console.log(error);
+        Swal.fire({
+          title: "Error!",
+          text: "Error sending message, please try again later or contact the server. We apologize for the inconvenience.",
+          icon: "error",
+          confirmButtonText: "Ok",
+        });
+      } finally {
+        setLoader(false);
+        /*
+        setFormData({
+          clientName: "",
+          clientLastName: "",
+          clientEmail: "",
+          clientPhone: "",
+          clientMessage: "",
+        });
+        */
+      }
+    }
   };
 
   return (
-    <div className="body-contact" id="Contact">
-      <section className="contact">
-        <div className="contact-content">
-          <h2 className="contact-h2">Contact Me</h2>
+    <div className={styles.contactSection}>
+      <div className={styles.body}>
+        <h1 className={styles.title}>Contact me</h1>
+
+        <p className={styles.text}>
+          Fill out this form and I will contact you shortly for detailed
+          consultation.
+        </p>
+
+        <div className={styles.containerInput}>
+          <input
+            className={styles.formInput}
+            placeholder={"Your name"}
+            value={formData.clientName}
+            onChange={onChangeFormData}
+            name="clientName"
+          />
+          <input
+            className={styles.formInput}
+            placeholder={"Your last name"}
+            value={formData.clientLastName}
+            onChange={onChangeFormData}
+            name="clientLastName"
+          />
         </div>
 
-        <div className="contact-container">
-          <div className="contact-info">
-            <div className="contact-box">
-              <div className="contact-icon">
-                <IoLocation className="icons-contact" />
-              </div>
-              <div className="contact-text">
-                <h3 className="contact-h3">Direccion</h3>
-                <p className="contact-p-2">Argentina - Buenos Aires</p>
-              </div>
-            </div>
-
-            <div className="contact-box">
-              <div className="contact-icon">
-                <FaPhoneVolume className="icons-contact" />
-              </div>
-              <div className="contact-text">
-                <h3 className="contact-h3">Telefono</h3>
-                <p className="contact-p-2">+549-11-2458-6710</p>
-              </div>
-            </div>
-
-            <div className="contact-box">
-              <div className="contact-icon">
-                <IoMdMail className="icons-contact" />
-              </div>
-              <div className="contact-text">
-                <h3 className="contact-h3">Email</h3>
-                <p className="contact-p-2">felipe.blaksley@hotmail.com</p>
-              </div>
-            </div>
-          </div>
-
-          <form ref={form} onSubmit={sendEmail} className="contact-form">
-            <div>
-              <h2 className="contact-form-h2">Send Message</h2>
-            </div>
-
-            <div className="contact-input-box">
-              <input
-                value={mensaje.from_name}
-                type="text"
-                name="from_name"
-                required="required"
-                placeholder=" "
-                onChange={onChange}
-              />
-              <span>Name</span>
-            </div>
-
-            <div className="contact-input-box">
-              <input
-                value={mensaje.from_email}
-                type="text"
-                name="from_email"
-                required="required"
-                placeholder=" "
-                onChange={onChange}
-              />
-              <span>Email</span>
-            </div>
-
-            <div className="contact-input-box">
-              <textarea
-                value={mensaje.message}
-                required="required"
-                name="message"
-                placeholder=" "
-                onChange={onChange}
-              ></textarea>
-              <span>Write your message...</span>
-            </div>
-
-            {state === true ? (
-              <div className="loader">
-                <LoadingOutlined />
-              </div>
-            ) : (
-              <div className="contact-input-box">
-                <input
-                  type="submit"
-                  name=""
-                  value="Send"
-                  className="btn-contacto"
-                />
-              </div>
-            )}
-          </form>
+        <div className={styles.containerInput}>
+          <input
+            className={styles.formInput}
+            placeholder={"Email"}
+            value={formData.clientEmail}
+            onChange={onChangeFormData}
+            name="clientEmail"
+          />
+          <input
+            className={styles.formInput}
+            placeholder={"Phone"}
+            value={formData.clientPhone}
+            onChange={onChangeFormData}
+            name="clientPhone"
+            type="number"
+          />
         </div>
-      </section>
+
+        <textarea
+          style={{ width: "100%", height: "100px" }}
+          className={styles.formInput}
+          placeholder={"Message"}
+          value={formData.clientMessage}
+          onChange={onChangeFormData}
+          name="clientMessage"
+        />
+
+        <div className={styles.containerButton}>
+          <button className={styles.formButton} onClick={onSubmit}>
+            {loader ? <ClipLoader color="#ffffff" size={20} /> : "Submit"}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default Contact;
