@@ -57,7 +57,7 @@ export default function Contact() {
           clientPhone: encodeURIComponent(formData.clientPhone),
           clientMessage: encodeURIComponent(formData.clientMessage),
         };
-        console.log(`${process.env.REACT_APP_API_URL}/api/emails/contactEmail`);
+
         const response = await fetch(
           `${process.env.REACT_APP_API_URL}/api/emails/contactEmail`,
           {
