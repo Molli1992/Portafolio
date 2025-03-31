@@ -102,7 +102,7 @@ export default function Contact() {
   };
 
   return (
-    <div className={styles.contactSection}>
+    <div className={styles.contactSection} id="Contact">
       <div className={styles.containerData}>
         <div className={styles.contatBox}>
           <div>
