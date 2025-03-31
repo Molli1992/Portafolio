@@ -3,7 +3,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 75px 0px;
+  padding: 100px 0px 25px 0px;
+  gap: 50px;
+}
+
+.containerData {
+  display: flex;
+  flex-direction: column;
+}
+
+.contatBox {
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.contactIcon {
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fca61f;
+}
+
+.contactText {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.contactH3 {
+  font-weight: bold;
+  color: rgb(116, 4, 4);
+  margin: 0px;
+}
+
+.contactParrafo {
+  font-weight: 300;
+  color: black;
+  margin: 0px;
 }
 
 .body {
@@ -13,12 +54,13 @@
   background-color: #ffffff;
   text-align: center;
   gap: 40px;
-  width: 750px;
+  width: 100%;
+  max-width: 750px;
 }
 
 .title {
   font-size: 36px;
-  color: #192d2f;
+  color: #fca61f;
   margin: 0px;
 }
 
@@ -55,7 +97,7 @@
 
 .formButton {
   border: none;
-  background-color: #cc4643;
+  background-color: #fca61f;
   color: #ffffff;
   padding: 15px 0px;
   width: 150px;
@@ -69,6 +111,14 @@
 
 @media (max-width: 1000px) {
   .body {
+    width: 100%;
+  }
+
+  .contactSection {
+    flex-direction: column;
+  }
+
+  .containerData {
     width: 100%;
   }
 }

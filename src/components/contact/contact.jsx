@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./formContact.module.css";
 import Swal from "sweetalert2";
 import { ClipLoader } from "react-spinners";
+import { IoMail, IoLocation, IoPhonePortrait } from "react-icons/io5";
 
 export default function Contact() {
   const [loader, setLoader] = useState(false);
@@ -56,9 +57,7 @@ export default function Contact() {
           clientPhone: encodeURIComponent(formData.clientPhone),
           clientMessage: encodeURIComponent(formData.clientMessage),
         };
-        console.log(
-          `${process.env.REACT_APP_API_URL}/api/emails/contactEmail`
-        );
+        console.log(`${process.env.REACT_APP_API_URL}/api/emails/contactEmail`);
         const response = await fetch(
           `${process.env.REACT_APP_API_URL}/api/emails/contactEmail`,
           {
@@ -91,7 +90,6 @@ export default function Contact() {
         });
       } finally {
         setLoader(false);
-        /*
         setFormData({
           clientName: "",
           clientLastName: "",
@@ -99,13 +97,49 @@ export default function Contact() {
           clientPhone: "",
           clientMessage: "",
         });
-        */
       }
     }
   };
 
   return (
     <div className={styles.contactSection}>
+      <div className={styles.containerData}>
+        <div className={styles.contatBox}>
+          <div>
+            <IoLocation className={styles.contactIcon} />
+          </div>
+
+          <div className={styles.contactText}>
+            <h3 className={styles.contactH3}>Address</h3>
+            <p className={styles.contactParrafo}>
+              La Rabida 2411, Beccar, Buenos Aires, Argentina.
+            </p>
+          </div>
+        </div>
+
+        <div className={styles.contatBox}>
+          <div>
+            <IoPhonePortrait className={styles.contactIcon} />
+          </div>
+
+          <div className={styles.contactText}>
+            <h3 className={styles.contactH3}>Phone number</h3>
+            <p className={styles.contactParrafo}>+54 9 112 458 6710</p>
+          </div>
+        </div>
+
+        <div className={styles.contatBox}>
+          <div>
+            <IoMail className={styles.contactIcon} />
+          </div>
+
+          <div className={styles.contactText}>
+            <h3 className={styles.contactH3}>Email</h3>
+            <p className={styles.contactParrafo}>felipe.blaksley@hotmail.com</p>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.body}>
         <h1 className={styles.title}>Contact me</h1>
 
