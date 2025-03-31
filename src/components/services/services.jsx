@@ -2,6 +2,7 @@ import React from "react";
 import "./services.css";
 import Card from "../card/card";
 import Resume from "../../cv/CV-portfolio.pdf";
+import { FaLightbulb, FaHeart, FaGlasses } from "react-icons/fa";
 
 function Services() {
   return (
@@ -27,7 +28,7 @@ function Services() {
       <div className="cards">
         <div>
           <Card
-            emoji={<ion-icon name="heart-half-outline" size="large"></ion-icon>}
+            emoji={<FaHeart />}
             heading={"Desing"}
             detail={"Figma, Bootstrap, Ant-desing, Chakra-ui, Material UI"}
           />
@@ -35,17 +36,17 @@ function Services() {
 
         <div>
           <Card
-            emoji={<ion-icon name="glasses-outline" size="large"></ion-icon>}
+            emoji={<FaGlasses />}
             heading={"Developer"}
             detail={
-              "HTML, CSS, Javascript, Next js, React, Redux, Zustand, Node js, Expresse, Bcript, Nodemailer, Google maps API, Sequielize, Postgress SQL, MySql and More ..."
+              "HTML, CSS, Javascript, Next js, React, React Native, Redux, Zustand, Node js, Expresse, Bcript, Nodemailer, Google maps API, Sequielize, Postgress SQL, MySql and More ..."
             }
           />
         </div>
 
         <div>
           <Card
-            emoji={<ion-icon name="bulb-outline" size="large"></ion-icon>}
+            emoji={<FaLightbulb />}
             heading={"UI/UX"}
             detail={
               "The user experience covers all aspects of the end user's interaction with the company, its services and products."

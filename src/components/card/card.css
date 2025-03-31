@@ -14,6 +14,7 @@
 
 .icon-card {
   color: blue;
+  font-size: 35px;
 }
 
 .card > :nth-child(2) {
