@@ -20,7 +20,11 @@ function Services() {
           interactive element the user might encounter.
         </span>
 
-        <a href={Resume} download="CV-Felipe-Blaksley.pdf">
+        <a
+          href={Resume}
+          download="CV-Felipe-Blaksley.pdf"
+          style={{ textDecoration: "none" }}
+        >
           <button className="button s-button">Download CV</button>
         </a>
       </div>

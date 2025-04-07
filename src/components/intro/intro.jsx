@@ -3,6 +3,7 @@ import "./intro.css";
 import Vectorial from "../../logo/vector-removebg-preview.png";
 import Photo from "../../imagenes/caricatura-removebg-preview.png";
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Intro() {
   return (
@@ -18,7 +19,9 @@ function Intro() {
           </span>
         </div>
 
-        <button className="button i-button">Hire me</button>
+        <Link spy={true} to="Contact" smooth={true} className="button i-button">
+          Hire me
+        </Link>
 
         <div className="i-icons">
           <a

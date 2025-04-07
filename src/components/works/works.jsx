@@ -5,6 +5,7 @@ import logoJodify from "../../imagenes/jodify-logo.png";
 import logoBoatmate from "../../imagenes/logo-boatmate.png";
 import logoMey from "../../imagenes/logo meyblaks-01.png";
 import logoGithub from "../../imagenes/logo-github-removebg-preview.png";
+import { Link } from "react-scroll";
 
 function Works() {
   return (
@@ -22,7 +23,9 @@ function Works() {
           <br></br>
         </span>
 
-        <button className="button s-button">Hire me</button>
+        <Link spy={true} to="Contact" smooth={true} className="button s-button">
+          Hire me
+        </Link>
       </div>
 
       <div className="w-rigth">
