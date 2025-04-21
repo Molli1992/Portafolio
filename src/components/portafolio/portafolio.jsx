@@ -18,9 +18,11 @@ import Movie from "../../imagenes/Captura de pantalla movie app.png";
 import Nigiri from "../../imagenes/nigiri-captura.png";
 import Hussel from "../../imagenes/husselkay-captura.png";
 import Profile from "../../imagenes/profile-website-img.png";
+import Crabog from "../../imagenes/crabog-website.jpg";
 
 function Portafolio() {
   const dataWebsites = [
+    { img: Crabog, url: "https://crabog.netlify.app/" },
     { img: Mey, url: "https://meyblaks.netlify.app/" },
     { img: GenesisdeHerencia, url: "https://genesisdeherencia.netlify.app/" },
     { img: BikeBazzar, url: "https://bikebazaar.netlify.app/" },
