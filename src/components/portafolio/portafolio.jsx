@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
-import BikeBazzar from "../../imagenes/Captura de pantalla bike-bazaar.png";
+import BikeBazzar from "../../imagenes/Captura de pantalla bike-bazaar.jpg";
 import Penger from "../../imagenes/pengersolutions-captura.png";
 import Vollx from "../../imagenes/Captura de pantalla vollx.png";
 import Mey from "../../imagenes/meyblaks-captura.png";
@@ -16,6 +16,7 @@ import Nigiri from "../../imagenes/nigiri-captura.png";
 import Hussel from "../../imagenes/husselkay-captura.png";
 import Profile from "../../imagenes/profile-website-img.png";
 import Crabog from "../../imagenes/crabog-website.jpg";
+import Casamiento from "../../imagenes/Captura de pantalla casamiento.jpg";
 
 function Portafolio() {
   const dataWebsites = [
@@ -28,6 +29,7 @@ function Portafolio() {
     { img: Penger, url: "https://pengersolutions.netlify.app/" },
     { img: Vollx, url: "https://vollx.netlify.app/" },
     { img: Profile, url: "https://benevolent-pony.netlify.app/" },
+    { img: Casamiento, url: "https://miaytomi.netlify.app/" },
     { img: Hussel, url: "https://husselkay.netlify.app" },
   ];
 

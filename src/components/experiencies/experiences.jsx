@@ -11,7 +11,7 @@ function Experiences() {
       </div>
 
       <div className="achivement">
-        <div className="circle">12+</div>
+        <div className="circle">11+</div>
         <span>completed </span>
         <span>Projects</span>
       </div>
