@@ -29,7 +29,7 @@ function Portafolio() {
     { img: Penger, url: "https://pengersolutions.netlify.app/" },
     { img: Vollx, url: "https://vollx.netlify.app/" },
     { img: Profile, url: "https://benevolent-pony.netlify.app/" },
-    { img: Casamiento, url: "https://miaytomi.netlify.app/" },
+    { img: Casamiento, url: "https://wedgiftbank.netlify.app/" },
     { img: Hussel, url: "https://husselkay.netlify.app" },
   ];
 
