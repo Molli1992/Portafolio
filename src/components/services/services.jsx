@@ -11,13 +11,10 @@ function Services() {
         <span>My Awesome</span>
         <span>Services</span>
 
-        <span>
+        <span style={{ maxWidth: "500px" }}>
           It's all about making sure a product's user interface is as intuitive
-          as possible,
-          <br></br>
-          and that means carefully considering each and every visual and
-          <br></br>
-          interactive element the user might encounter.
+          as possible, and that means carefully considering each and every
+          visual and interactive element the user might encounter.
         </span>
 
         <a

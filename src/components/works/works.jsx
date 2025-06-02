@@ -14,13 +14,10 @@ function Works() {
         <span>Works for All these</span>
         <span>Brands & Clients</span>
 
-        <span>
+        <span style={{ maxWidth: "550px" }}>
           Logical thinking and problem solving are two key skills that are
-          <br></br>
           developed by learning to code. The process of writing code requires
-          <br></br>
           thinking in logical terms and how to make a solution work efficiently.
-          <br></br>
         </span>
 
         <Link spy={true} to="Contact" smooth={true} className="button s-button">
