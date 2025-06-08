@@ -17,14 +17,14 @@ import Hussel from "../../imagenes/husselkay-captura.png";
 import Profile from "../../imagenes/profile-website-img.png";
 import Crabog from "../../imagenes/crabog-website.jpg";
 import Casamiento from "../../imagenes/Captura de pantalla casamiento.jpg";
-import SvelteCourse from "../../imagenes/svelte-course.jpg";
+import Contenidos from "../../imagenes/contenidos-img.png";
 
 function Portafolio() {
   const dataWebsites = [
     { img: Crabog, url: "https://crabog.netlify.app/" },
     { img: GenesisdeHerencia, url: "https://genesisdeherencia.netlify.app/" },
     { img: Mey, url: "https://meyblaks.netlify.app/" },
-    { img: SvelteCourse, url: "https://sveltecourse.netlify.app/" },
+    { img: Contenidos, url: "https://contenidos.netlify.app/" },
     { img: Hussel, url: "https://husselkay.netlify.app" },
     { img: VectorSoluciones, url: "https://vectorsoluciones.netlify.app/" },
     { img: Penger, url: "https://pengersolutions.netlify.app/" },
