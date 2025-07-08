@@ -5,13 +5,13 @@ function Experiences() {
   return (
     <div className="experiences" id="Experiences">
       <div className="achivement">
-        <div className="circle">3+</div>
+        <div className="circle">4+</div>
         <span>years </span>
         <span>Experiences</span>
       </div>
 
       <div className="achivement">
-        <div className="circle">12+</div>
+        <div className="circle">13+</div>
         <span>completed </span>
         <span>Projects</span>
       </div>

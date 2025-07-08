@@ -3,7 +3,7 @@ import "./works.css";
 import logoHenry from "../../imagenes/henry-logo-removebg-preview.png";
 import logoJodify from "../../imagenes/jodify-logo.png";
 import logoBoatmate from "../../imagenes/logo-boatmate.png";
-import logoMey from "../../imagenes/logo meyblaks-01.png";
+import logoLastMinute from "../../imagenes/logo-lastminute.png";
 import logoGithub from "../../imagenes/logo-github-removebg-preview.png";
 import { Link } from "react-scroll";
 
@@ -55,11 +55,11 @@ function Works() {
 
           <div className="w-secCircle-r">
             <a
-              href="https://meyblaks.netlify.app/"
+              href="https://www.trylastminute.com/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={logoMey} alt="MeyBlaks" />
+              <img src={logoLastMinute} alt="MeyBlaks" />
             </a>
           </div>
 
@@ -103,11 +103,11 @@ function Works() {
 
           <div className="w-secCircle">
             <a
-              href="https://meyblaks.netlify.app/"
+              href="https://www.trylastminute.com/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={logoMey} alt="MeyBlaks" />
+              <img src={logoLastMinute} alt="MeyBlaks" />
             </a>
           </div>
 
