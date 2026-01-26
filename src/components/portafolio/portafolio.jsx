@@ -17,7 +17,7 @@ import Hussel from "../../imagenes/husselkay-captura.png";
 import Profile from "../../imagenes/profile-website-img.png";
 import Crabog from "../../imagenes/crabog-website.jpg";
 import Casamiento from "../../imagenes/Captura de pantalla casamiento.jpg";
-// import Contenidos from "../../imagenes/contenidos-img.png";
+import Contenidos from "../../imagenes/contenidos-img.png";
 import EastEnglish from "../../imagenes/easy-english.png";
 
 function Portafolio() {
@@ -25,7 +25,7 @@ function Portafolio() {
     { img: Crabog, url: "https://crabog.netlify.app/" },
     { img: GenesisdeHerencia, url: "https://genesisdeherencia.netlify.app/" },
     { img: Mey, url: "https://meyblaks.netlify.app/" },
-    //{ img: Contenidos, url: "https://contenidos.netlify.app/" },
+    { img: Contenidos, url: "https://ntgsa.netlify.app/" },
     { img: EastEnglish, url: "https://easyenglishonline.netlify.app/" },
     { img: Hussel, url: "https://husselkay.netlify.app" },
     { img: VectorSoluciones, url: "https://vectorsoluciones.netlify.app/" },
